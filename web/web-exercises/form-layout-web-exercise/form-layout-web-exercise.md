@@ -24,7 +24,9 @@ webSetupCode:
     1. Center the form on the page.
     2. Make labels block-level and bold.
     3. Add spacing between inputs and labels.
-    4. Style the submit button with a custom color and hover effect.
+    4. Style the submit button with a custom color and 
+       an interaction effect (hover on desktop, 
+       focus/active on mobile).
     */
 
     body {
@@ -44,7 +46,7 @@ webSetupCode:
     }
 
     button {
-      /* Add background, border, and hover transition */
+      /* Add background, border, and transition */
     }
   startingJs: |
     // No JavaScript needed
@@ -59,7 +61,10 @@ webSetupCode:
 In this exercise, you will:
 - Build a simple contact form structure in HTML.
 - Use CSS to center it and style its elements.
-- Add a hover effect to the submit button for interactivity.
+- Add an interaction effect to the submit button  
+
+📱 **Note:** On mobile, you won’t see hover.  
+Instead, use `:focus` or `:active` to test the effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -71,7 +76,7 @@ If you’re unsure how, check the hints[1].
 - Use `display: flex; justify-content: center; align-items: center;` on `body` for centering.  
 - Apply `max-width: 400px; margin: auto;` on `form`.  
 - Labels: `display: block; font-weight: bold;`.  
-- Button hover example:
+- Button interaction example (desktop + mobile):
 
 ```css
 button {
@@ -83,7 +88,10 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+button:hover,
+button:focus,
+button:active {
   background: #45a049;
 }
+
 ```

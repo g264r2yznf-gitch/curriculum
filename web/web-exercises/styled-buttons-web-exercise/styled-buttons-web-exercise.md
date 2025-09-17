@@ -13,7 +13,8 @@ webSetupCode:
     Task:
     1. Style the .primary button with a blue background, white text, and padding.
     2. Style the .secondary button with a gray border, transparent background, and padding.
-    3. Add a hover effect to .primary to darken the background slightly.
+    3. Add an interaction effect to .primary to darken the background slightly 
+       (hover on desktop, focus/active on mobile).
     */
 
     /* Write your CSS below */
@@ -32,7 +33,10 @@ In this exercise, you’ll practice styling two different buttons using class se
 Your goals:
 - Give the primary button a distinct, modern appearance.
 - Make the secondary button visually different, but consistent.
-- Add a simple hover effect for interactivity.
+- Add a simple interaction effect for interactivity.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -44,9 +48,13 @@ If you’re unsure how, check the hints[1].
 
 - Use class selectors like `.primary {}`  
 - You can use `background-color`, `color`, `border`, `padding`  
-- Add a hover effect using `:hover`  
+- Add an interaction effect using `:hover`, `:focus`, and `:active`  
+
 ```css
-.primary:hover {
+.primary:hover,
+.primary:focus,
+.primary:active {
   background-color: #004080;
 }
+
 ```

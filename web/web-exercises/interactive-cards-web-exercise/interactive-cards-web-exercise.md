@@ -72,6 +72,9 @@ In this exercise, you will:
 - Add a smooth animation when the card is pressed.
 - Style the "Buy Now" button for a better mobile experience.
 
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
+
 If you’re unsure how, check the hints[1].
 
 ---
@@ -80,7 +83,6 @@ If you’re unsure how, check the hints[1].
 
 [1: Hints]
 
-- On mobile, `:hover` doesn’t work — use `:active` and `:focus` instead.
 - Slight enlargement on tap:
 
 ```css

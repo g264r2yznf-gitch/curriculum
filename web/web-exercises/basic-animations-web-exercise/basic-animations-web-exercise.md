@@ -29,11 +29,13 @@ webSetupCode:
 
 In this exercise, you will:
 - Use `@keyframes` to create a simple animation.
-- Apply a hover-based pulsing effect to the button.
+- Apply an interaction-based pulsing effect to the button  
 - Animate the title to fade in when the page loads.
 
-If you’re unsure how, check the hints[1].
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
+If you’re unsure how, check the hints[1].
 ---
 
 ## Footnotes
@@ -57,10 +59,12 @@ If you’re unsure how, check the hints[1].
 }
 ```
 
-- For the button hover pulse:
+- For the button pulse (works on both desktop + mobile):
 
 ```css
-.pulse-btn:hover {
+.pulse-btn:hover,
+.pulse-btn:focus,
+.pulse-btn:active {
   animation: pulse 0.6s infinite alternate;
 }
 

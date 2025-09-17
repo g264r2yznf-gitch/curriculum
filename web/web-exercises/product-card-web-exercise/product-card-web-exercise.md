@@ -24,7 +24,8 @@ webSetupCode:
     1. Use flexbox to align the image on the left and product details on the right.
     2. Style the product card with padding, border-radius, and shadow.
     3. Make the image a fixed width and responsive.
-    4. Style the buttons differently, with hover transitions.
+    4. Style the buttons differently, with an interaction effect 
+       (hover on desktop, focus/active on mobile) and smooth transitions.
     5. On small screens, stack the image above the details.
     */
 
@@ -63,8 +64,11 @@ webSetupCode:
 
 In this exercise, you will:
 - Use **flexbox** to build a two-column product card.
-- Style buttons and add hover effects.
+- Style buttons and add **interaction effects**.
 - Make the layout **responsive** using a media query.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -114,20 +118,15 @@ button {
   transition: background 0.3s ease;
 }
 
-.add {
-  background: #0078ff;
-}
-.add:hover {
-  background: #005fc4;
-}
+.add { background: #0078ff; }
+.buy { background: #28a745; }
+```
 
-.buy {
-  background: #28a745;
-}
-.buy:hover {
-  background: #1e7a32;
-}
+- Interaction effects (desktop + mobile):
 
+```css
+.add:hover, .add:focus, .add:active { background: #005fc4; }
+.buy:hover, .buy:focus, .buy:active { background: #1e7a32; }
 ```
 
 - Responsive stacking:

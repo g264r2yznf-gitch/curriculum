@@ -14,8 +14,10 @@ webSetupCode:
   startingCss: |
     /* 
     Task:
-    1. Add a smooth hover transition to the button (change background & scale).
-    2. Add a hover effect to the card (shadow + slight movement).
+    1. Add a smooth interaction transition to the button 
+       (change background & scale on hover/active/focus).
+    2. Add an interaction effect to the card 
+       (shadow + slight movement).
     3. Keep the design clean and mobile-friendly.
     */
 
@@ -30,7 +32,9 @@ webSetupCode:
       transition: background 0.3s ease, transform 0.3s ease;
     }
 
-    .transition-btn:hover {
+    .transition-btn:hover,
+    .transition-btn:focus,
+    .transition-btn:active {
       background: #1d6fa5;
       transform: scale(1.05);
     }
@@ -44,7 +48,9 @@ webSetupCode:
       transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
 
-    .card:hover {
+    .card:hover,
+    .card:focus,
+    .card:active {
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       transform: translateY(-4px);
     }
@@ -52,16 +58,19 @@ webSetupCode:
     // No JavaScript needed
 ---
 
-# Smooth Hover Transitions in CSS
+# Smooth Transitions in CSS
 
 ---
 
 ## Content
 
 In this exercise, you will:
-- Learn how to create smooth hover effects using `transition`.
+- Learn how to create smooth interaction effects using `transition`.
 - Apply scaling and background-color changes on a button.
-- Enhance cards with shadows and movement on hover.
+- Enhance cards with shadows and movement.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -89,4 +98,13 @@ transform: scale(1.05)
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 ```
 
-Combine these with `:hover` to create smooth and clean animations.
+- Combine transitions with interaction states:
+
+```css
+.element:hover,
+.element:focus,
+.element:active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+```

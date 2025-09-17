@@ -45,7 +45,8 @@ webSetupCode:
     1. Make the table responsive (width: 100%).
     2. Use border-collapse for cleaner styling.
     3. Style headers differently from cells.
-    4. Use rowspan and colspan properly.
+    4. Add an interaction effect on rows for readability 
+       (hover on desktop, focus/active on mobile).
     */
 
     /* Write your CSS below */
@@ -62,7 +63,10 @@ webSetupCode:
 In this exercise, you will:
 - Learn how to merge table cells using `colspan` and `rowspan`.
 - Style a table with multiple header rows.
-- Make the table responsive and cleanly styled.
+- Make the table responsive and add row interaction for readability.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -98,9 +102,11 @@ td {
 }
 ```
 
-- Hover effect for better readability:
+- Interaction effect for better readability:
 ```css
-tbody tr:hover {
+tbody tr:hover,
+tbody tr:focus,
+tbody tr:active {
   background-color: #f2f2f2;
 }
 ```

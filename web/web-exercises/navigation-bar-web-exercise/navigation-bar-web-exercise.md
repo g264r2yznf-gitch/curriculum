@@ -21,7 +21,8 @@ webSetupCode:
     1. Make the navigation bar horizontal.
     2. Space the nav items evenly.
     3. Remove default list styles.
-    4. Highlight links on hover.
+    4. Add an interaction effect to the links 
+       (hover on desktop, focus/active on mobile).
     */
 
     /* Write your CSS below */
@@ -38,7 +39,10 @@ webSetupCode:
 In this exercise, you will:
 - Create a horizontal navigation bar.
 - Evenly space the navigation items.
-- Add a hover effect for better interactivity.
+- Add an interaction effect to the links  
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -68,10 +72,12 @@ If you’re unsure how, check the hints[1].
 }
 ```
 
-- Hover effect:
+- Interaction effect:
 
 ```css
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
   color: blue;
   text-decoration: underline;
 }

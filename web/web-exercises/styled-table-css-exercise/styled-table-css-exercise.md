@@ -42,7 +42,8 @@ webSetupCode:
     Task:
     1. Apply a border-collapse style to the table.
     2. Alternate row colors (zebra striping).
-    3. Highlight table rows on hover.
+    3. Add an interaction effect to highlight table rows 
+       (hover on desktop, focus/active on mobile).
     4. Style <th> cells differently from <td> cells.
     */
 
@@ -60,8 +61,11 @@ webSetupCode:
 In this exercise, you will:
 - Learn how to style tables for better readability.
 - Apply zebra striping to alternate rows.
-- Add hover effects to highlight rows.
+- Add an interaction effect to highlight rows.
 - Style headers differently from data cells.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -78,6 +82,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
 ```
 
 - Zebra striping:
@@ -92,10 +97,12 @@ tbody tr:nth-child(even) {
 }
 ```
 
-- Hover effect:
+- Interaction effect:
 
 ```css
-tbody tr:hover {
+tbody tr:hover,
+tbody tr:focus,
+tbody tr:active {
   background-color: #d6eaff;
 }
 ```

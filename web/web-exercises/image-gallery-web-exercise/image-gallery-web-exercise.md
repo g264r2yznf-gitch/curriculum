@@ -17,7 +17,9 @@ webSetupCode:
     Task:
     1. Make the gallery images display side by side using flexbox.
     2. Add spacing between images.
-    3. On hover, slightly scale up the image and add a subtle box shadow.
+    3. Add an interaction effect: slightly scale up the image 
+       and add a subtle box shadow (hover on desktop, 
+       focus/active on mobile).
     4. Center the gallery title.
     */
 
@@ -51,7 +53,10 @@ webSetupCode:
 In this exercise, you will:
 - Build a simple image gallery.
 - Use flexbox for layout.
-- Add hover effects for better interactivity.
+- Add an interaction effect to the images  
+
+📱 **Note:** On mobile, you won’t see hover.  
+Instead, use `:focus` or `:active` to test the effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -71,10 +76,12 @@ If you’re unsure how, check the hints[1].
 }
 ```
 
-- Hover effect:
+- Interaction effect (works on both desktop + mobile):
 
 ```css
-.images img:hover {
+.images img:hover,
+.images img:focus,
+.images img:active {
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }

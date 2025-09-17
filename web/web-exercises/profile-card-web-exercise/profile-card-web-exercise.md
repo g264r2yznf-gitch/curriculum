@@ -19,7 +19,8 @@ webSetupCode:
     1. Center the profile card in the middle of the page.
     2. Give the card a shadow, rounded corners, and padding.
     3. Make the profile image circular.
-    4. Style the "Follow" button with a hover effect.
+    4. Style the "Follow" button with an interaction effect 
+       (hover on desktop, focus/active on mobile).
     */
 
     body {
@@ -39,7 +40,7 @@ webSetupCode:
     }
 
     button {
-      /* Add background, padding, and hover transition */
+      /* Add background, padding, and transition */
     }
   startingJs: |
     // No JavaScript needed
@@ -54,7 +55,10 @@ webSetupCode:
 In this exercise, you will:
 - Create and style a profile card component.
 - Practice CSS flexbox centering techniques.
-- Apply rounded corners, shadows, and hover effects for interactivity.
+- Apply rounded corners, shadows, and button interaction effects.
+
+📱 **Note:** On mobile, `:hover` doesn’t trigger.  
+Use `:focus` or `:active` instead to test your button effect.
 
 If you’re unsure how, check the hints[1].
 
@@ -96,7 +100,7 @@ body {
 }
 ```
 
-- Button hover:
+- Button interaction effect:
 
 ```css
 button {
@@ -108,7 +112,9 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+button:hover,
+button:focus,
+button:active {
   background: #005fc4;
 }
 ```
