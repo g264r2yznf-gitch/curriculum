@@ -52,7 +52,6 @@ If you’re unsure how, check the hints[1].
 
 [1: Hints]
 - Use the `title` attribute to show a tooltip when the user hovers over an element.  
-- Example:  
 ```html
   <img src="mountain.jpg" title="Picture of Mount Everest">
 ```
