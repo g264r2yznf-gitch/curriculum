@@ -17,6 +17,7 @@ sections:
   - inline-vs-block-html-exercise
   - list-styling-css-exercise
   - box-model-web-exercise
+  - positioning-elements-css-exercise
   - basic-links-and-images-web-exercise
   - basic-table-html-exercise
   - styled-table-css-exercise
@@ -32,11 +33,13 @@ sections:
   - profile-card-web-exercise
   - product-card-web-exercise
   - responsive-cards-table-web-exercise
+  - responsive-typography-web-exercise
   - faq-toggle-web-exercise
   - transition-effects-web-exercise
   - basic-animations-web-exercise
   - interactive-cards-web-exercise
   - change-text-web-exercise
+  - css-variables-web-exercise
   - toggle-theme-web-exercise
   - accordion-menu-web-exercise
   - faq-toggle-with-js-web-exercise
