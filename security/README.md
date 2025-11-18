@@ -1,15 +1,16 @@
-name: Security
+name: Anonymouse!
 
 description: Master security best practices.
 
-color: A6FBFF
+color: Black & White
 
-icon: https://img.enkipro.com/4018c4ae08af6af932acd4e10dfc6b45.png
+icon: anonymoushackers.net
 
-language: bash
+language: Turkish
 
 availableAspects:
   - introduction
-  - workout
-  - deep
-  - obscura
+  - Cyber 
+  - dark
+  - web
+description: you loser! you camber! who am i? Anonymouse i darkweb and wifi in king! i am anon. turkish language "Affetmem , Unutmam , biz anonymouse'uz"
